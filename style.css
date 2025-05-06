@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+header {
+  text-align: center;
+  padding: 100px 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #111;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  color: #fff;
+  border: 2px solid #ff7a00;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.cta-button:hover {
+  background-color: #ff7a00;
+  color: #0f0f0f;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Changed from 3 to 4 */
+  gap: 20px;
+  justify-items: center;
+}
+
+
+.project img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.03);
+}
+
+.project p {
+  text-align: center;
+  margin-top: 10px;
+  color: #cccccc;
+}
+
+#about p, #contact p {
+  text-align: center;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+/* Sliding carousel for Instagram Post Concepts */
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: slide-left 20s linear infinite;
+}
+
+.carousel .project {
+  flex: 0 0 auto;
+  width: 280px;
+  margin-right: 20px;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+section {
+  padding: 40px 60px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: #f5f4f4;
+}
